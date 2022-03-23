@@ -50,8 +50,8 @@ function addNewProductReview(id, rating, comment) {
         comment
     }
     productToAppend.reviews.push(newReview);
-}
     return newReview;
+}
 
 }
 
