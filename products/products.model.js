@@ -26,7 +26,7 @@ function getProductsByPrice(min, max) {
 
 function getProductByID(id) {
     return products.find((product) => {
-       return products.id === id;
+       return product.id === id;
     })
 }
 
