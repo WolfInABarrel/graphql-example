@@ -43,14 +43,14 @@ function addNewProduct(id, description, price) {
 }
 
 function addNewProductReview(id, rating, comment) {
+    const productToAppend = getProductByID(id);
+    if (productToAppend) {
     const newReview = {
         rating,
         comment
     }
-    const productToAppend = products.find((product) => {
-        return product.id === id;
-    })
     productToAppend.reviews.push(newReview);
+}
     return newReview;
 
 }
