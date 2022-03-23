@@ -15,4 +15,8 @@ const orders = [
     }
  ]
 
- module.exports = orders;
+function getAllOrders() {
+    return orders;
+}
+
+ module.exports = { getAllOrders };
