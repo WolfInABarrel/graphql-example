@@ -4,7 +4,6 @@ const path = require('path');
 const { graphqlHTTP } = require('express-graphql');
 const { loadFilesSync } = require('@graphql-tools/load-files');
 const { makeExecutableSchema } = require('@graphql-tools/schema');
-const req = require('express/lib/request');
 
 const app = express();
 
